@@ -1,21 +1,36 @@
-// No Many to Many relationships, All one to many relationships
+const User = require('../models/User');
+const Post = require('../models/Post');
+const Comment = require('../models/Comment');
 
-// USER
-    // Users have many comments
-    // users have many blogs
-    // Users will not have any foreign keys
+// define relationships between models
+// User and Post
+User.hasMany(Post, {
+    foreignKey: 'userId',
+});
+Post.belongsTo(User, {
+    foreignKey: 'userId',
+});
 
-// Blog
-    // Blogs belong to one User
-    // Blogs can have MANY comments
-    // Will have foreign key that points to the User
+// User and Comment
 
-// Comment
-    // Comment belongs to ONE user
-    // Comments belongs to ONE blog
-    //Will have foreign key for User and one for Blog (it has two parents, User and Blog)
+User.hasMany(Comment, {
+    foreignKey: 'userId',
+});
+Comment.hasOne(User, {
+    foreignKey: 'userId',
+});
 
+// Post and Comment
 
-
-
-
+Post.hasMany(Comment, {
+    foreignKey: 'postId',
+});
+Comment.hasOne(Post, {
+    foreignKey: 'postId',
+});
+ 
+module.exports = {
+    User,
+    Comment,
+    Post,
+};
