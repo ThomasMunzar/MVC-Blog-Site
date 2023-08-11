@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Blog Blog</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">Welcome To Blog Blog Blog</div>
+    {{#if logged_in}}
+    <div>
+        <button id="logout">Log Out</button>
+    </div>
+    <div>
+         <a href="/dashboard"><button>Dashboard</button></a>
+    </div>
+    {{else}}
+    <div>
+        <a href="/login"><button>Login</button></a>
+    </div>
+    <div>
+        <a href="/login"> <button>Sign up</button></a>
+    </div>
+
+    {{/if}}
+    
+    {{{body}}}
+    <script src="/js/logout.js">
+
+    </script>
+</body>
+
+</html>
