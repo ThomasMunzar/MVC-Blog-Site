@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Post } = require('../../models');
 
-router.post('/dashboard', async (req,res) => {
+router.post('/posts', async (req,res) => {
     const {title, content} = req.body;
 
     try{
