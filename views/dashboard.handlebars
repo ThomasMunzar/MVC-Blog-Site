@@ -1,5 +1,5 @@
 <h1>Dashboard</h1>
-<form id="postForm" action="/posts" method="POST">
+<form id="postForm" action="/api/posts" method="POST">
     <div>
         <label>
             Title
@@ -14,3 +14,13 @@
     </div>
     <button type="submit">Submit</button>
  </form>
+
+ <div>
+    <h2> Your Posts:</h2>
+    {{#each posts}}
+    <div class="post">
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+    </div>
+    {{/each}}
+ </div>
