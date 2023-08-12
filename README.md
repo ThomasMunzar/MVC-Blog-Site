@@ -1,5 +1,5 @@
 # MVC-Blog-Site
-
+[Link to site](https://mvc-blog-website-17e9c8d359a7.herokuapp.com/)
 ## Description
  The goal of this project was to create a blog site where a user can sign up, create blog posts, comment on other blog posts and see other peoples blog posts.
  Though this seems like a simple ask, it was extremely difficult for me. I  was just able to understand routing for API's but now having to route to a handlebar file messed up what i though i had know. So this is not my best work, and it is not complete. But I did learn in the process. I was able to finally get the Posts (the ones i seeded AND the ones i wrote in the form on my dashboard) to show up on the page. Im stoked. Its ugly, its barly functional. But that one path does work. It took me hours and hours. I will be able to create something better one day. just not today.
