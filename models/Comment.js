@@ -21,12 +21,12 @@ Comment.init(
                 model: 'user',
                 key: 'id',
             },
-            postId: {
-                type: DataTypes.INTEGER,
-                references: {
-                    module: 'post',
-                    key: 'id',
-                },
+        },
+        postId: {
+            type: DataTypes.INTEGER,
+            references: {
+                module: 'post',
+                key: 'id',
             },
         },
     },

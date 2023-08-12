@@ -3,27 +3,27 @@ const { Post } = require('../models') // should it be model/post??
 const postData = [
     {
         title: 'Ideas for dinner',
-        content: 'Roast Chicken, Congee, grilled steak tacos',
+        content: 'Roast Chicken',
         userId: 1
     },
     {
         title: 'Ideas for dinner',
-        content: 'Roast Chicken, Congee, grilled steak tacos',
+        content: 'Tacos',
         userId: 1
     },
     {
         title: 'Ideas for dinner',
-        content: 'Roast Chicken, Congee, grilled steak tacos',
+        content: 'Chow Fun',
         userId: 1
     },
     {
         title: 'Ideas for dinner',
-        content: 'Roast Chicken, Congee, grilled steak tacos',
+        content: 'Lobster',
         userId: 1
     },
     {
         title: 'Ideas for dinner',
-        content: 'Roast Chicken, Congee, grilled steak tacos',
+        content: 'Corn',
         userId: 1
     },
 ];
